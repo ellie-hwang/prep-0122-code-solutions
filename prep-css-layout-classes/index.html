@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      padding: 20px;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="poster of Raiders of the Lost Ark">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>
+          In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant
+          before Adolf Hitler's Nazis can obtain its awesome powers.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="poster of Temple of Doom">
+        <h3>Temple of Doom</h3>
+        <p>
+          In 1935, Indiana Jones arrives in India, still part of the British Empire, and is asked to find a mystical stone. He
+          then stumbles upon a secret cult committing enslavement and human sacrifices in the catacombs of an ancient palace.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="poster of The Last Crusade">
+        <h3>The Last Crusade</h3>
+        <p>
+          In 1938, after his father Professor Henry Jones, Sr. goes missing while pursuing the Holy Grail, Professor Henry
+          "Indiana" Jones, Jr. finds himself up against Adolf Hitler's Nazis again to stop them from obtaining its powers.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
